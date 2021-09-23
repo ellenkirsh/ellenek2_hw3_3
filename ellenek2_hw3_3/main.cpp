@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "How many times would you like to toss the coin? \n";
+    cout << "How many times do you want to toss the coin? \n";
     cin >> n;
     for(int i = 0; i < n; i++){
         int x = rand()%2;
