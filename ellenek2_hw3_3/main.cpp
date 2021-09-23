@@ -6,9 +6,20 @@
 //
 
 #include <iostream>
+#include<cstdlib>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    int n;
+    cout << "How many times would you like to toss the coin? \n";
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        int x = rand()%2;
+        if(x == 0){
+            cout << "Heads \n";
+        }else if (x==1){
+            cout << "Tails \n";
+        }
+    }
     return 0;
 }
